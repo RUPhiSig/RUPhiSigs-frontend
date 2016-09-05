@@ -2,7 +2,7 @@ module.exports = {
   entry: './src/client.js',
   output: {
     path: './public',
-    filename: './public/bundle.js',
+    filename: 'bundle.js',
   },
   module: {
     loaders: [
