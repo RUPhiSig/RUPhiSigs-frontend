@@ -5,9 +5,9 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import App from './App';
 
-const Test = () => (<h1><Link to="/">Pussy</Link></h1>);
+const Test = () => (<h1><Link to="/">Test1</Link></h1>);
 
-const Test0 = () => (<h1><Link to="/puss">Nooblet</Link></h1>);
+const Test0 = () => (<h1><Link to="/puss">Test0</Link></h1>);
 
 injectTapEventPlugin();
 
@@ -17,7 +17,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRoute component={Test0} />
-        <Route path="/puss" component={Test} />
+        <Route path="/test" component={Test} />
       </Route>
     </Router>
   </MuiThemeProvider>
