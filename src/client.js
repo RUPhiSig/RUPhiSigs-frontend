@@ -7,7 +7,7 @@ import App from './App';
 
 const Test = () => (<h1><Link to="/">Test1</Link></h1>);
 
-const Test0 = () => (<h1><Link to="/test">Test0</Link></h1>);
+const Test0 = () => (<h1><Link to="/test">Test00</Link></h1>);
 
 injectTapEventPlugin();
 
