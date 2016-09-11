@@ -16,22 +16,53 @@
 			}
 
 			#count{
-				/*background-color: blue;
-				color: white;*/
+				background-color: #2196F3;
+				color: #EEEEEE;
 				height: 20%;
 			}
 
-			#up{
-				/*background-color: green;
-				color: white;*/
+			#upContainer{
 				height: 40%;
+				color: #EEEEEE;
+			}
+
+			#up{
+				background-color: #81C784;
+				width: 70%;
+				float: left;
+				height: 100%;
+			}
+
+			#up5{
+				background-color: #4CAF50;
+				width: 30%;
+				float: right;
+				height: 100%;
+			}
+
+			#downContainer{
+				height: 40%;
+				color: #EEEEEE;
 			}
 
 			#down{
-				/*background-color: red;
-				color: white;*/
-				height: 40%;
+				background-color: #e57373;
+				width: 70%;
+				float: left;
+				height: 100%;
 			}
+
+			#down5{
+				background-color: #f44336;
+				width: 30%;
+				float: right;
+				height: 100%;
+			}
+
+			.active{
+				background-color: #B0BEC5;
+			}
+
 			table{
 				text-align: center;
 				min-height: 100%;
@@ -39,6 +70,9 @@
 			}
 			h1{
 				font-size: 7.5em;
+				margin-top: 0;
+				display: inline;
+				margin: auto;
 			}
     </style>
 
@@ -47,23 +81,26 @@
     <script src="/body_count.js"></script>
   </head>
   <body>
-  	<table class="table">
-		<tr class="info" id="count">
-			<td></td>
-			<td style="vertical-align:middle"><h1>People: <b><span id="numPeople">0</span></b></h1></td>
-			<td></td>
-		</tr>
-		<tr class="success" id="up">
-			<td></td>
-			<td style="vertical-align:middle"><h1>Up</h1></td>
-			<td></td>
-		</tr>
-		<tr class="danger" id="down">
-			<td></td>
-			<td style="vertical-align:middle"><h1>Down</h1></td>
-			<td></td>
-		</tr>
-	</table>
+  	<div id="count">
+  		<h1>People: <b><span id="numPeople">0</span></b></h1>
+  	</div>
+  	<div id="upContainer">
+  		<div id="up">
+  			<h1>Up</h1>
+  		</div>
+  		<div id="up5">
+  			<h1>Up 5</h1>
+  		</div>
+  	</div>
+
+  	<div id="downContainer">
+  		<div id="down">
+  			<h1>Down</h1>
+  		</div>
+  		<div id="down5">
+  			<h1>Down 5</h1>
+  		</div>
+  	</div>
   	<!-- <div id="count">People: <span id='numPeople'>0</span></div>
   	<div id="up">Up</div>
   	<div id="down">Down</div> -->

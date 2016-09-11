@@ -110,6 +110,14 @@ app.get('/party/subtract', (req, res) => (
   changeByPerson(res, -1)
 ));
 
+app.get('/party/add5', (req, res) => (
+  changeByPerson(res, 5)
+));
+
+app.get('/party/subtract5', (req, res) => (
+  changeByPerson(res, -5)
+));
+
 app.get('/party/clear', () => (
   clearPeople()
 ));

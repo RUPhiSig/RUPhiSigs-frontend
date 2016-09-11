@@ -26,16 +26,16 @@ $( document ).ready(function() {
   update();
 
   $("#up").click(function(){
-  	$("#up").addClass("active").removeClass("success");
-  	$.ajax({
+  	$("#up").addClass("active")
+    $.ajax({
       type: "GET",
       contentType: "application/json; charset=utf-8",
       url: "/party/add",
       success: function (data) {
         people = data["people"];
         // console.log(people);
+        $("#up").removeClass("active")
         $("#numPeople").text(people);
-        $("#up").removeClass("active").addClass("success");
         // console.log("We have "+people+" people now!");
       },
       dataType: "json",
@@ -45,25 +45,58 @@ $( document ).ready(function() {
     }
   })
   $("#down").click(function(){
-   $("#down").addClass("active").removeClass("danger");
-  	$.ajax({
+  	$("#down").addClass("active")
+    $.ajax({
       type: "GET",
       contentType: "application/json; charset=utf-8",
       url: "/party/subtract",
       success: function (data) {
         people = data["people"];
         // console.log(people);
+        $("#down").removeClass("active")
         $("#numPeople").text(people);
-        $("#down").removeClass("active").addClass("danger");
+        // console.log("We have "+people+" people now!");
+      },
+      dataType: "json",
+    });
+  })
+  $("#up5").click(function(){
+    $("#up5").addClass("active")
+    $.ajax({
+      type: "GET",
+      contentType: "application/json; charset=utf-8",
+      url: "/party/add5",
+      success: function (data) {
+        people = data["people"];
+        // console.log(people);
+        $("#up5").removeClass("active")
+        $("#numPeople").text(people);
+        // console.log("We have "+people+" people now!");
+      },
+      dataType: "json",
+    });
+    if(people >= cap){
+        alert("We are now at capacity. DO NOT LET MORE PEOPLE IN!");
+    }
+  })
+  $("#down5").click(function(){
+    $("#down5").addClass("active")
+    $.ajax({
+      type: "GET",
+      contentType: "application/json; charset=utf-8",
+      url: "/party/subtract5",
+      success: function (data) {
+        people = data["people"];
+        // console.log(people);
+        $("#down5").removeClass("active")
+        $("#numPeople").text(people);
         // console.log("We have "+people+" people now!");
       },
       dataType: "json",
     });
   })
   $("#count").click(function(){
-  	$("#count").addClass("active").removeClass("info");
   	update();
-  	$("#count").removeClass("active").addClass("info");
       if(people >= cap){
         alert("We are now at capacity. DO NOT LET MORE PEOPLE IN!");
       }
