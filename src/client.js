@@ -1,48 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, Link, browserHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MenuTabs from './menu';
-import Header from './header';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import injectTapEventPlugin from 'react-tap-event-plugin';
+import reducers from './reducers';
+import App from './components/App';
+import {
+  HomeContent,
+  MembersContent,
+  AboutUsContent,
+  ContactUsContent,
+} from './components/ContentCards';
 
 injectTapEventPlugin();
 
-// const Test = () => (<h1><Link to="/">Test1</Link></h1>);
+const muiTheme = getMuiTheme({
+  fontFamily: 'Roboto, sans-serif',
+  palette: {
+    primary1Color: '#F44336',
+    accent1Color: '#616161',
+  },
+});
 
-// const Test0 = () => (<h1><Link to="/test">Test0.0</Link></h1>);
-
-const App = (props) => {
-  return (
-    <div>
-      <Header />
-      <MenuTabs />
-    </div>
-  );
-}
-
-/*ReactDOM.render(
-  (
-  <MuiThemeProvider>
-    <Router history={browserHistory}>
-      <Route path="/" component={App}>
-        <IndexRoute component={Test0} />
-        <Route path="/test" component={Test} />
-      </Route>
-    </Router>
-  </MuiThemeProvider>
-  ),
-  document.getElementById('root')
-);*/
+const store = createStore(reducers);
 
 ReactDOM.render(
   (
-  <MuiThemeProvider>
-    <Router history={browserHistory}>
-      <Route path="/" components={App}>
-      </Route>
-    </Router>
-  </MuiThemeProvider>
+    <Provider store={store}>
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <Router history={browserHistory}>
+          <Route path="/" components={App}>
+            <IndexRoute components={HomeContent} />
+            <Route path="members" components={MembersContent} />
+            <Route path="about-us" components={AboutUsContent} />
+            <Route path="contact-us" components={ContactUsContent} />
+          </Route>
+        </Router>
+      </MuiThemeProvider>
+    </Provider>
   ),
   document.getElementById('root')
 );
