@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/RUPhiSig/RUPhisigs-frontend.git"
   },
-  "author": "Kiran Kurian <kiran.kurian@rutgers.edu>",
+  "author": "Kiran Kurian <kiran.kurian@rutgers.edu> Neil Malu <neilmmalu@gmail.com>",
   "license": "MIT",
   "homepage": "http://ruphisigmakappa.com",
   "dependencies": {

@@ -1,10 +1,16 @@
 import React from 'react';
 import Paper from 'material-ui/Paper';
 
+const style = {
+	img:{
+		overflow: "hidden",
+		width: "100%",
+	}
+};
 const Header = () => (
   <Paper zDepth={1}>
     <div>
-      <img src="PSK_crest.jpg" height="203" width="360" alt="PSK" />
+      <img src="banner.jpg" alt="PSK" style={style.img}/>
     </div>
   </Paper>
 );

@@ -122,8 +122,8 @@ app.get('/party/clear', () => (
   clearPeople()
 ));
 
-app.get('/PSK_crest.jpg', (req, res) => (
-  res.sendFile(path.join(__dirname, 'assets/images', 'PSK_crest.jpg'))
+app.get('/banner.jpg', (req, res) => (
+  res.sendFile(path.join(__dirname, 'assets/images', 'banner.jpg'))
 ));
 
 // Send all requests to index.html
