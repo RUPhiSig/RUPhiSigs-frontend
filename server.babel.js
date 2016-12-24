@@ -126,6 +126,10 @@ app.get('/banner.jpg', (req, res) => (
   res.sendFile(path.join(__dirname, 'assets/images', 'banner.jpg'))
 ));
 
+app.get('/banner2.jpg', (req, res) => (
+  res.sendFile(path.join(__dirname, 'assets/images', 'banner2.jpg'))
+));
+
 app.get('/favicon.ico', (req, res) => (
   res.sendFile(path.join(__dirname, 'assets/images', 'favicon.ico'))
 ));
