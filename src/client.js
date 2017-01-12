@@ -11,6 +11,7 @@ import App from './components/App';
 import {
   HomeContent,
   MembersContent,
+  RushContent,
   AboutUsContent,
   ContactUsContent,
 } from './components/ContentCards';
@@ -35,6 +36,7 @@ ReactDOM.render(
           <Route path="/" components={App}>
             <IndexRoute components={HomeContent} />
             <Route path="members" components={MembersContent} />
+            <Route path="rush" components={RushContent} />
             <Route path="about-us" components={AboutUsContent} />
             <Route path="contact-us" components={ContactUsContent} />
           </Route>

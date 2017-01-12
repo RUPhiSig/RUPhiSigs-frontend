@@ -15,6 +15,7 @@ const Menu = (props) => {
       >
         <Tab label="Home" value="" style={styles} onActive={changeRoute} />
         <Tab label="About Us" value="about-us" style={styles} onActive={changeRoute} />
+        <Tab label="Join Us" value="rush" style={styles} onActive={changeRoute} />
         <Tab label="Members" value="members" style={styles} onActive={changeRoute} />
         <Tab label="Contact Us" value="contact-us" style={styles} onActive={changeRoute} />
       </Tabs>

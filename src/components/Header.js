@@ -10,7 +10,7 @@ const style = {
 const Header = () => (
   <Paper zDepth={1}>
     <div>
-      <img src="banner2.jpg" alt="PSK" style={style.img}/>
+      <img src="banner3.jpg" alt="PSK" style={style.img}/>
     </div>
   </Paper>
 );
