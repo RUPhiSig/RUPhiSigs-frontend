@@ -18,7 +18,7 @@ const ContentCard = (props) => {
 
   return (
     <Card>
-      <CardTitle title={title} style={{textAlign: 'left', fontSize: 40, fontWeight: "bold"}} />
+      <CardTitle title={title} style={{textAlign: 'left', fontSize: 40, fontWeight: "bold", textDecoration: "underline"}} />
       <CardText>
         {children}
       </CardText>
@@ -115,7 +115,7 @@ export const AboutUsContent = () => (
       </article>
       <br />
       <h3>CORE VALUES</h3>
-      <article>
+      <article style={{marginBottom:40}}>
         <ul>
           <li>DEMAND EXCELLENCE</li>
           <li>COMMIT TO LIFELONG LEARNING</li>
@@ -123,22 +123,20 @@ export const AboutUsContent = () => (
           <li>VALUE BROTHERHOOD ABOVE SELF</li>
         </ul>
       </article>
-      <br />
       <h3>CARDINAL PRINCIPLES</h3>
       <h4 style={{color: "#F44336", fontWeight: "normal"}}>TO PROMOTE BROTHERHOOD</h4>
-        <article>
+        <article style={{marginBottom:20}}>
           Justice, harmony, and brotherly love are essential to the spirit of fraternity. We promise to set an example of true brotherhood not only in our relations with each other, but in our association with people everywhere.
         </article>
-        <br />
       <h4 style={{color: "#F44336", fontWeight: "normal"}}>TO STIMULATE SCHOLARSHIP</h4>
-        <article>
+        <article style={{marginBottom:20}}>
           Wisdom comes with learning. Complementing the mission of higher education, we seek to help our members to combine formal and informal learning experience; to more fully appreciate the importance of both theoretical and practical knowledge; and, by broadening their understanding of human relationships, to produce men of wisdom who will be better prepared to make positive contributions to society and all mankind.
         </article>
-        <br />
       <h4 style={{color: "#F44336", fontWeight: "normal"}}>TO DEVELOP CHARACTER</h4>
-        <article>
+        <article style={{marginBottom:20}}>
           Honor is the basis of fraternal relationships. We resolve to instill in each member a devotion to those values which will guide him to ends that are noble and right, so that in all that he represents and in all that he does, he shall be known as a man of honor who inspires others by his example and thus wins admiration and respect for himself and for Phi Sigma Kappa.
         </article>
+        <br />
       <h3>CREED</h3>
         <article>
           <p>In the firm conviction that my Fraternity demands of me a life of Faith and Purpose.</p>
