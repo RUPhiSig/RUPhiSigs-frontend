@@ -4,7 +4,7 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 
 const style = {
-  
+
   Article: {
     "marginRight": 400,
     "textAlign": "justify",
@@ -48,30 +48,17 @@ export const MembersContent = () => (
       <article>
         <ul>
           <h3 style={{fontWeight: "normal"}}>Current active members:</h3>
-          <li>Kiran Kurian</li>
-          <li>Jacob Goldfarb</li>
-          <li>Neil Malu</li>
-          <li>Trevor Frederick</li>
-          <li>Max Ohring</li>
-          <li>Alec Rohrbach</li>
-          <li>Michael Potros</li>
-          <li>Joeseph Markman</li>
-          <li>Dakota Johnson</li>
-          <li>Thomas Bonilla</li>
-          <li>John Considine</li>
-          <li>Kerem Sahiner</li>
-          <li>Michael Mullin</li>
-          <li>Tomer Levy</li>
-          <li>Nathan Yezril</li>
           <li>Jake Novak</li>
-          <li>Robert Goodson</li>
-          <li>Dhruv Bhardwaj</li>
-          <li>Omar Hassan</li>
-          <li>Shawn Ermel</li>
-          <li>Kyle Kopcho</li>
-          <li>George Prior</li>
-          <li>Jack Kirkland</li>
+          <li>Christopher Iverson</li>
+          <li>Paul Stanik</li>
+          <li>Zach S</li>
+          <li>Matt Marrazzo</li>
           <li>Joseph Coleman</li>
+          <li>Trevor Frederick</li>
+          <li>Michael Mullin</li>
+          <li>Nathan Yezril</li>
+          <li>Kyle Kopcho</li>
+          <li>Jack Kirkland</li>
           <li>Andrew Whitehouse</li>
           <li>Harsha Gopalakrishnan</li>
         </ul>
@@ -141,7 +128,7 @@ export const AboutUsContent = () => (
         <article>
           <p>In the firm conviction that my Fraternity demands of me a life of Faith and Purpose.</p>
           <p>I hereby solemnly declare My Faith in the wisdom and love of God; in the dignity and worth of my fellowmen; in the strength and beauty of true Fraternity; in the history and future of my Country; and in the traditions and program of my Alma Mater. </p>
-          <p>Henceforward, therefore, it shall be My Purpose to remain forever true to this, my fraternity's faith in me and in turn to preserve and promote courageously and unselfishly the chosen ideals of our mutual affection and common endeavor.</p> 
+          <p>Henceforward, therefore, it shall be My Purpose to remain forever true to this, my fraternity's faith in me and in turn to preserve and promote courageously and unselfishly the chosen ideals of our mutual affection and common endeavor.</p>
           <p>To this end I dedicate My Life to the maintenance of this Faith and the pursuit of this Purpose so that the ideals of Phi Sigma Kappa, being embodied in me, may be fulfilled in my Character and Conduct, and be known and honored by all men. </p>
           By these things I stand.
         </article>
@@ -154,16 +141,16 @@ export const ContactUsContent = () => (
     <div style= {style.Article}>
       <h3 style={{color: "#F44336", fontWeight: "normal"}}>PRESIDENT</h3>
       <article>
-        <u>Kiran Kurian</u><br />
-        Phone: (973) 476 0072<br />
-        Email: kjk161@scarletmail.rutgers.edu
+        <u>Jake Novak</u><br />
+        Phone: (856) 298-6090<br />
+        Email: jvn28@scarletmail.rutgers.edu
       </article>
       <br />
       <h3 style={{color: "#F44336", fontWeight: "normal"}}>INDUCTOR</h3>
       <article>
-        <u>Alec Rohrbach</u><br />
-        Phone: (908) 566 7154<br />
-        Email: ajr221@rutgers.edu
+        <u>Joseph Coleman</u><br />
+        Phone: (936) 264-6613<br />
+        Email: jdc140@scarletmail.rutgers.edu
       </article>
       <br />
       <h3 style={{color: "#F44336", fontWeight: "normal"}}>ADDRESS</h3>
